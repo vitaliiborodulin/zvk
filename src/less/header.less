@@ -1,0 +1,125 @@
+.header {
+    position: fixed;
+    width: 100%;
+    
+    padding: 15px 0;
+    margin-top: -135px;
+    height: 190px;
+    .sm-block({
+        margin-top: -89px;
+        height: auto;
+    });
+    .xs-block({
+        margin-top: -43px;
+        padding: 2px 0;
+    });
+    color: @black;
+    background-color: @grey;
+
+    z-index: 20;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    // .xxs(flex-direction, column);
+}
+
+.header__logo {
+    margin-bottom: 26px;
+    .sm(margin-bottom, 0);
+
+    width: 284px;
+    height: 59px;
+    .xs-block({
+        width: 160px;
+        height: auto;
+    })
+}
+
+.header__menu {
+    display: flex;
+    justify-content: space-between;
+    .sm(display, none);
+
+    li {
+        width: 140px;
+        padding: 10px 0;
+        text-align: center;
+        border-left: 3px solid @orange;
+
+        background-color: @dark_grey;
+        transition: background-color 0.5s ease;
+
+        &:hover {
+            background-color: lighten(@dark_grey, 10%);
+        }
+    }
+
+    a {
+
+        text-decoration: none;
+        color: @brown;
+    }
+}
+
+.header__center {
+    text-align: center;
+    .md(display, none);
+}
+
+.header__since {
+    margin-bottom: 16px;
+
+    span {
+        color: @brown;
+    }
+}
+
+.header__warranty {
+    font-weight: 700;
+    color: @brown;
+    text-transform: uppercase;
+}
+
+.header__contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    &-text {
+        margin-bottom: 10px;
+        color: @brown;
+        font-weight: 700;
+        letter-spacing: 0.03em;
+        .sm(display, none);
+    }
+
+    &-tel {
+        margin-bottom: 6px;
+        font-size: 36px;
+        .sm-block({
+            font-size: 30px;
+            // margin-bottom: 10px;
+        });
+        .xs(font-size, 20px);
+        .xxs(font-size, 17px);
+        color: inherit;
+        text-decoration: none;
+    }
+
+    &-time {
+        margin-bottom: 12px;
+        font-size: 16px;
+        .sm(display, none);
+        span {
+            font-weight: 700;
+        }
+    }
+
+    .btn {
+        .sm(display, none);
+    }
+}

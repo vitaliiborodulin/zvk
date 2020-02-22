@@ -1,0 +1,36 @@
+.btn {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
+    
+    text-align: center;
+    text-decoration: none;
+    letter-spacing: normal;
+
+    font: inherit;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: 700;
+
+    color: @black;
+    background-color: @orange;
+
+    transition: all .5s ease;
+
+    &:hover {
+        background-color: lighten(@orange, 5%);
+    }
+}
+
+.btn--alt {
+    color: @white_btn;
+    background-color: @brown;
+    // padding: 7px 0;
+    padding: 16px 0;
+}
+
+.btn--o {
+    color: @brown;
+    background-color: @white_btn;
+    border: 1px solid @brown;
+}

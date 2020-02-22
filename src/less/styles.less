@@ -1,0 +1,89 @@
+// @grey: #ebebeb;
+@grey: #e0e0db;
+@grey_table: #fafafa;
+@grey_price: #989898;
+@dark_grey: #d7d7d7;
+@very_dark_grey: #5b5b5b;
+@brown: #824417;
+@orange: #ffa64d;
+@black: #2a2a2a;
+@red:#d2391a;
+
+@white: #ebebeb;
+@white_pure: #ffffff;
+@white_btn: #fdfdfd;
+@white_title: #fafafa;
+
+@import "smart-grid.less";
+@import "imagelightbox.min.less";
+
+.reset();
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Cuprum', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    line-height: 26px;
+    padding-top: 134px;
+    .sm(padding-top, 89px);
+    .xs(padding-top, 43px);
+    color: @white;
+}
+
+.wrapper {
+    .wrapper();
+}
+
+section {
+    padding: 90px 0;
+    .md-block({
+        padding: 70px 0;
+    });
+    .xs-block({
+        padding: 50px 0;
+    });
+    .xxs-block({
+        padding: 30px 0;
+    });
+}
+
+.section-title {
+    color: @black;
+    font-size: 36px;
+    line-height: 54px; 
+    .xxs-block({
+        font-size: 25px;
+        line-height: 35px; 
+    });
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.04em;
+    span {
+        color: @brown;
+    }
+}
+
+@import 'btn.less';
+@import 'form.less';
+@import 'header.less';
+@import 'hero.less';
+@import 'forfree.less';
+@import 'spec.less';
+@import 'smeta.less';
+@import 'works.less';
+@import 'geo.less';
+@import 'advise.less';
+@import 'portfolio.less';
+@import 'question.less';
+@import 'footer.less'; //добить вид стрелочки вверх
+@import 'popup.less';

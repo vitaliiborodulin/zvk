@@ -1,0 +1,131 @@
+.hero {
+    padding-bottom: 0;
+    // padding-top: 92px+184px;
+    min-height: 520px;
+
+    color: @white;
+    background: url(../img/hero-bg.jpg) no-repeat center top/cover;
+
+    h1 {
+        margin-bottom: 41px;
+        font-size: 42px;
+        line-height: 54px;
+        .xs-block({
+            font-size: 38px;
+            line-height: 42px;
+        });
+        .xxs-block({
+            font-size: 25px;
+            line-height: 30px;
+        });
+        font-weight: 700;
+        letter-spacing: 0.04em;
+        text-shadow: 0px 7px 4px rgba(0, 3, 6, 0.7);
+        text-transform: uppercase;
+
+        span {
+            color: orange;
+        }
+    }
+}
+
+.hero__content{
+    position: relative;
+    .md(text-align, center);
+}
+
+.hero__subtitle {
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 28px;
+    line-height: 32px;
+    font-weight: 700;
+    text-shadow: 0px 4px 4px rgba(0, 3, 6, 0.4);
+    span {
+        display: inline-block;
+        padding: 10px 5px;
+        color: @black;
+        background-color: @orange;
+    }
+}
+
+.hero__warranty {
+    margin-bottom: 113px;
+    display: inline-block;
+    color: @orange;
+    background-color: rgba(0,0,0,0.6);
+    padding: 25px 30px;
+    border-top: 2px solid @orange;
+    font-size: 32px;
+    font-weight: 700;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    text-shadow: 0px 15px 20px rgba(0, 3, 6, 0.7);
+}
+
+.hero__action {
+    width: 371px;
+    height: 73px;
+    display: flex;
+    align-items: center;
+    .md-block({
+        margin: 0 auto;
+    });
+    .xs-block({
+        width: 100%;
+        justify-content: center;
+    });
+
+    &-label {
+        // width: 141px;
+        letter-spacing: 0.04em;
+        padding: 26px 20px 20px;
+        font-size: 32px;
+        .xs-block({
+            padding: 15px 10px;
+            font-size: 25px;
+        });
+        font-weight: 700;
+        text-transform: uppercase;
+        background-color: rgba(210, 57, 26, .6);
+        text-shadow: 0px 15px 20px rgba(0, 3, 6, 0.7);
+    }
+    &-text {
+        padding: 6px 22px;
+        letter-spacing: 0.04em;
+        background-color: rgba(42, 42, 42, .8);
+        .xs-block({
+            font-size: 15px;
+            padding: 2px 12px;
+        });
+    }
+
+    &-aim {
+        margin-bottom: 10px;
+        .xs(margin-bottom, 1px);
+        span {
+            color: @orange;
+        }
+    }
+
+    &-free {
+        text-transform: uppercase;
+        span {
+            color: rgb(210, 57, 26);
+        }
+    }
+}
+
+.hero__form {
+    position: absolute;
+    right: 0;
+    bottom: -42px;
+    .md(display, none);
+}
+
+
+  
+  
+  
+
+  

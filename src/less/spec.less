@@ -1,0 +1,68 @@
+.spec {
+    text-align: center;
+    min-height: 670px;
+    background: url(../img/spec-bg.jpg) no-repeat center top/cover;
+}
+
+.spec__title {
+    margin-bottom: 44px;
+}
+
+.spec__header {
+    color: @black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 20px;
+    line-height: normal;
+    min-height: 95px;
+
+
+    h3 {
+        text-transform: uppercase;
+    }
+
+    span {
+        color: @brown;
+        font-weight: 700;
+    }
+
+}
+
+.spec__list {
+    .row-flex();
+}
+
+.spec__item {
+    width: 300px;
+    margin-bottom: 24px;
+    text-align: center;
+    box-shadow: 0px 8px 9px 0px rgba(0, 3, 6, 0.3),inset 0px 1px 2px 0px rgba(0, 3, 6, 0.04);
+    border: 1px solid transparent;
+    background: rgba(255, 255, 255, 0.7);
+    transition: all 0.5s ease;
+
+    .col();
+    .size(4);
+    .size-xs(6);
+    .size-xxs(12);
+
+    &:hover {
+        border: 1px solid @orange;
+    }
+}
+.sprec__text {
+    h3 {
+        text-transform: uppercase;
+    }
+}
+
+.spec__buttons {
+    padding: 20px 12px;  
+
+    .btn {
+        margin-bottom: 15px;
+    }
+}
