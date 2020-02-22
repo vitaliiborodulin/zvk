@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <title>ЗВК</title>
+    <link rel="shortcut icon" href="favicon.ico"/>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="wrapper">
+            
+            <div class="header__content">
+                <div class="header__nav">
+                    <div class="header__logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                    <ul class="header__menu">
+                        <li><a href="#spec">Наши цены</a></li>
+                        <li><a href="#works">Наши работы</a></li>
+                    </ul>
+                </div>
+                <div class="header__center">
+                    <p class="header__since">Работаем <span>с 2011 года</span> <br>
+                        по всей Самарской области</p>
+                    <p class="header__warranty">Гарантия 3 года</p>
+                </div>
+                <div class="header__contacts">
+                    <p class="header__contacts-text">Хотите заказать? Звоните!</p>
+                    <a class="header__contacts-tel" href="tel:+7(927)712-67-03">+7(927)712-67-03</a>
+                    <p class="header__contacts-time"><span>Часы работы:</span> пн-пт с 8.00 до 19.00</p>
+                    <a class="btn popup" href="#">Позвоните нам бесплатно</a>
+                </div>
+            </div>
+
+        </div>
+    </header> 
+
+    <section class="hero">
+        <div class="wrapper">
+
+            <div class="hero__content">
+                <h1>ПРОФЕССИОНАЛЬНО УСТАНАВЛИВАЕМ <br> ЗАБОРЫ <span>•</span> ВОРОТА <span>•</span> КАЛИТКИ</h1>
+                <p class="hero__subtitle">С УЧЕТОМ ВАШЕГО БЮДЖЕТА <span>ЗА 2 ДНЯ</span></p>
+                <p class="hero__warranty">С ГАРАНТИЕЙ 3 ГОДА</p>
+
+                <div class="hero__action">
+                    <div class="hero__action-label">Акция!</div>
+                    <div class="hero__action-text">
+                        <p class="hero__action-aim">Закажите забор <span>50 м</span></p>
+                        <p class="hero__action-free">калитка <span>бесплатно</span></p>
+                    </div>
+                </div>
+
+                <form class="form hero__form" action="mail.php" method="POST">
+                    <div class="form__header">Закажите <span>бесплатный</span> расчёт стоимости</div>
+                    <div class="form__descr">Оставьте свой телефон и через <br> <span>15 минут</span> получите точный расчет</div>
+                    <input class="form__input" type="tel" name="number" placeholder="Введите свой телефон" required>
+                    <input type="hidden" name="loc" value="hero">
+                    <button class="btn btn--alt form__btn" type="submit">Заказать расчет <br> <small>(это бесплатно)</small></button>
+                    <div class="form__bottom">Заполнение заявки Вас ни к чему не обязывает! Вы сможете отказаться в любой момент!</div>
+                </form>
+            </div>
+
+        </div>
+    </section>  
+
+    <section class="forfree">
+        <div class="wrapper">
+            <h2 class="section-title forfree__title">Делаем <span>бесплатно</span></h2>
+
+            <div class="forfree__list">
+
+                <div class="forfree__item">
+                    <img src="img/consultant.png" alt="consultant">
+                    <h3 class="forfree__header"><span>Консультация</span> мастера</h3>
+                </div>
+
+                <div class="forfree__item">
+                    <img src="img/calculation.png" alt="calculation">
+                    <h3 class="forfree__header">Предварительный <span>расчет</span></h3>
+                </div>
+
+                <div class="forfree__item">
+                    <img src="img/ruler.png" alt="ruler">
+                    <h3 class="forfree__header"><span>Выезд</span> замерщика</h3>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="spec" id="spec">
+        <div class="wrapper">
+
+            <h2 class="section-title spec__title"><span>Наша</span> специализация</h2>
+
+            <div class="spec__list">
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Заборы из профлиста</h3>
+                        <p>под ключ <span>от 946 руб. м/п</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-1.jpg" alt="spec-1">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Заборы из штакетника</h3>
+                        <p>под ключ <span>от 1157 руб. м/п</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-2.jpg" alt="spec-2">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Заборы из сетки рабица</h3>
+                        <p>под ключ <span>от 946 руб. м/п</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-3.jpg" alt="spec-3">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Ворота окатные</h3>
+                        <p>под ключ <span>от 28 000 руб.</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-4.jpg" alt="spec-4">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Ворота распашные</h3>
+                        <p>под ключ <span>от 28 000 руб.</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-5.jpg" alt="spec-5">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+
+                <div class="spec__item">
+                    <div class="spec__header">
+                        <h3>Калитки</h3>
+                        <p>под ключ <span>от 28 000 руб.</span></p>
+                    </div>
+                    <div class="spec__img">
+                        <img class="b-lazy" src="img/spec-thumb.jpg" data-src="img/spec-6.jpg" alt="spec-6">
+                    </div>
+                    <div class="spec__buttons">
+                        <a href="#" class="btn btn--alt popup">Заказать расчёт <br> (это бесплатно)</a>
+                        <a href="#portfolio" class="btn btn--alt btn--o">Посмотреть выполненные <br> объекты</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <section class="smeta">
+        <div class="wrapper">
+            <h2 class="section-title smeta__title">Смета на забор <span>2*30 метров под ключ</span></h2>
+            <p class="smeta__subtitle">из окрашенного профлиста г.Самара район Кряж</p>
+
+            <div class="smeta__tables">
+                <table>
+                    <tr>
+                        <th colspan="2">Смета на материалы</th>
+                        <th>36 614 руб.</th>
+                    </tr>
+                    <tr>
+                        <td>Столбы профтруба 60*60*2 мм</td>
+                        <td>33 м/п</td>
+                        <td>5 280 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Лаги профтруба 40*20*1,5 мм</td>
+                        <td>120 м/п</td>
+                        <td>7 900 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Профлист С10 окрашенный</td>
+                        <td>60 м/п</td>
+                        <td>15 000 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Саморезы кровельные 5,5*19</td>
+                        <td>350 шт.</td>
+                        <td>725 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Заглушка на столб</td>
+                        <td>11 шт.</td>
+                        <td>190 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Краска Pantolac</td>
+                        <td>2,3 кг</td>
+                        <td>3 500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Арматура D8</td>
+                        <td>14 м/п</td>
+                        <td>229 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Цемент М400</td>
+                        <td>100 кг</td>
+                        <td>540 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Песок</td>
+                        <td>330 кг</td>
+                        <td>300 руб.</td>
+                    </tr>
+                    <tr>
+                        <td>Щебень</td>
+                        <td>280 кг</td>
+                        <td>450 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Доставка материалов</td>
+                        <td>2 500 руб.</td>
+                    </tr>
+
+                    <tr class="empty">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr>
+                        <th colspan="2">Смета на монтаж</th>
+                        <th>12 030 руб.</th>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Ямобур земляные работы</td>
+                        <td>2 500 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Бетонирование столбов</td>
+                        <td>2 720 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Монтаж конструкции</td>
+                        <td>1 570 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Окрашивание конструкции</td>
+                        <td>1 420 руб.</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">Крепление профлиста </td>
+                        <td>3 820 руб.</td>
+                    </tr>
+
+                    <tr class="empty">
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+
+                    <tr class="sum">
+                        <td>Общая сумма</td>
+                        <td colspan="2">48 644 руб.</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <section class="works" id="works">
+        <div class="wrapper">
+            <h2 class="section-title works__title"><span>Наши</span> работы</h2>
+
+            <div class="works__list">
+
+                <div class="works__item">
+                    <div class="works__images">
+                        <div class="works__images-main">
+                            <a href="img/works-1-1.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-main.jpg" data-src="img/works-1-1.jpg" alt="works-1-1">
+                            </a>
+                        </div>
+                        <div class="works__images-sec">
+                            <a href="img/works-1-2.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-1-2.jpg" alt="works-1-2">
+                            </a>
+                            <a href="img/works-1-3.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-1-3.jpg" alt="works-1-3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__text">
+                        <h3 class="works__header"><span>Забор 2*47 м (в рамке)</span> <br>
+                            с воротами и калиткой из профлиста </h3>
+                        <p class="works__place">Самарская обл. Управленческий</p>
+
+                        <table>
+                            <tr><td>Столбы для забора - профтруба 60*60*2 мм (шаг 3м)</td></tr>
+                            <tr><td>Рамка - профтруба 40*20*1,5 мм и 20*20*1,5 мм</td></tr>
+                            <tr><td>Профлист с10 толщина 0,45 мм (окрашенный, односторон.)</td></tr>
+                            <tr><td>Фундамент - бетонирование</td></tr>
+                            <tr><td>Ворота откатные, автоматические 2*4 м</td></tr>
+                            <tr><td>Калитка с механическим замком 2*1,2 м</td></tr>
+                            <tr><td>Столбы - профтруба 100*100*3 мм</td></tr>
+                        </table>
+
+                        <div class="works__costs">
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость работ:</p>
+                                <p class="works__value">51 470 руб.</p>
+                            </div>
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость материалов:</p>
+                                <p class="works__value">51 470 руб.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--alt popup">Заказать такой же</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="works__item">
+                    <div class="works__images">
+                        <div class="works__images-main">
+                            <a href="img/works-2-1.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-main.jpg" data-src="img/works-2-1.jpg" alt="works-2-1">
+                            </a>
+                        </div>
+                        <div class="works__images-sec">
+                            <a href="img/works-2-2.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-2-2.jpg" alt="works-2-2">
+                            </a>
+                            <a href="img/works-2-3.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-2-3.jpg" alt="works-2-3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__text">
+                        <h3 class="works__header"><span>Забор 1,8*31 м</span> <br>
+                            с воротами и калиткой</h3>  
+                        <p class="works__place">Самарская обл. Смышляевка</p>
+
+                        <table>
+                            <tr><td>Столбы профильные 60*60*2 мм (шаг 2,5 м)</td></tr>
+                            <tr><td>Секция 2*3 м</td></tr>
+                            <tr><td>Фундамент - бетонирование</td></tr>
+                            <tr><td>Ворота откатные, механические 1,8*3,5 м</td></tr>
+                            <tr><td>Калитка с механическим замком 1,8*1 м</td></tr>
+                        </table>
+
+                        <div class="works__costs">
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость работ:</p>
+                                <p class="works__value">25 800 руб.</p>
+                            </div>
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость материалов:</p>
+                                <p class="works__value">124 400 руб.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--alt popup">Заказать такой же</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="works__item">
+                    <div class="works__images">
+                        <div class="works__images-main">
+                            <a href="img/works-3-1.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-main.jpg" data-src="img/works-3-1.jpg" alt="works-3-1">
+                            </a>
+                        </div>
+                        <div class="works__images-sec">
+                            <a href="img/works-3-2.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-3-2.jpg" alt="works-3-2">
+                            </a>
+                            <a href="img/works-3-3.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-3-3.jpg" alt="works-3-3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__text">
+                        <h3 class="works__header"><span>Забор 2*75 м</span> <br>
+                            с воротами и калиткой</h3>
+                        <p class="works__place">Самарская обл. Старосемейкин</p>  
+
+                        <table>
+                            <tr><td>Столбы для забора 60*60*2 мм (шаг 3 м)</td></tr>
+                            <tr><td>Лаги - профтруба 40*20*1,5 мм (2 шт.)</td></tr>
+                            <tr><td>Профлист с10 толщиной 0,45 мм (окрашенный, односторон.)</td></tr>
+                            <tr><td>Фундамент - бетонирование</td></tr>
+                            <tr><td>Ворота откатные, механические 2*4 м</td></tr>
+                            <tr><td>Калитка с механическим замком 2*1,2 м</td></tr>
+                            <tr><td>Столбы - профтруба 100*100*3 мм</td></tr>
+                        </table>
+
+                        <div class="works__costs">
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость работ:</p>
+                                <p class="works__value">52 543 руб.</p>
+                            </div>
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость материалов:</p>
+                                <p class="works__value">124 757 руб.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--alt popup">Заказать такой же</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="works__item">
+                    <div class="works__images">
+                        <div class="works__images-main">
+                            <a href="img/works-4-1.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-main.jpg" data-src="img/works-4-1.jpg" alt="works-4-1">
+                            </a>
+                        </div>
+                        <div class="works__images-sec">
+                            <a href="img/works-4-2.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-4-2.jpg" alt="works-4-2">
+                            </a>
+                            <a href="img/works-4-3.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-4-3.jpg" alt="works-4-3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__text">
+                        <h3 class="works__header"><span>Забор 1,8*18 м</span> <br>
+                            с калиткой из металического штакетника</h3>
+                        <p class="works__place">Самарская обл. Новосемейкино</p>
+
+                        <table>
+                            <tr><td>Столбы для забора - профтруба 60*60*2 мм (шаг 3 м)</td></tr>
+                            <tr><td>Лаги - профтруба 40*20*1,5 мм (2 шт.)</td></tr>
+                            <tr><td>Штакитник (окрашенный, односторонний)</td></tr>
+                            <tr><td>Фундамент - бетонирование</td></tr>
+                            <tr><td>Калитка с механическим замком 1,8*1,2 м</td></tr>
+                            <tr><td>Столбы - профтруба 80*80*3 мм</td></tr>
+                        </table>
+
+                        <div class="works__costs">
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость работ:</p>
+                                <p class="works__value">18 500 руб.</p>
+                            </div>
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость материалов:</p>
+                                <p class="works__value">29 600 руб.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--alt popup">Заказать такой же</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="works__item">
+                    <div class="works__images">
+                        <div class="works__images-main">
+                            <a href="img/works-5-1.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-main.jpg" data-src="img/works-5-1.jpg" alt="works-5-1">
+                            </a>
+                        </div>
+                        <div class="works__images-sec">
+                            <a href="img/works-5-2.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-5-2.jpg" alt="works-5-2">
+                            </a>
+                            <a href="img/works-5-3.jpg" data-imagelightbox="c">
+                                <img class="b-lazy" src="img/works-thumb-sec.jpg" data-src="img/works-5-3.jpg" alt="works-5-3">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="works__text">
+                        <h3 class="works__header"><span>Забор 1,5*270 м (в рамке)</span> <br>
+                            с воротами и калиткой из сетки рабица</h3>
+                        <p class="works__place">Самарская обл. Алексеевка</p> 
+
+                        <table>
+                            <tr><td>Столбы для забора - профтруба 60*60*2 мм (шаг 2,5 м)</td></td>
+                            <tr><td>Рамка - профтруба 40*20*1,5 мм</td></tr>
+                            <tr><td>Сетка - ячейка 50*50*2 мм</td></tr>
+                            <tr><td>Фундамент - бетонирование</td></tr>
+                            <tr><td>Ворота распашные 1,5*4 м</td></tr>
+                            <tr><td>Калитка с механическим замком</td></tr>
+                            <tr><td>Столбы - профтруба 80*80*3 мм</td></tr>
+                        </table>
+
+                        <div class="works__costs">
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость работ:</p>
+                                <p class="works__value">81 900 руб.</p>
+                            </div>
+                            <div class="works__sum">
+                                <p class="works__aim">Стоимость материалов:</p>
+                                <p class="works__value">88 000 руб.</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn--alt popup">Заказать такой же</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="geo">
+        <h2 class="section-title geo__title">География построенных нами <span>объектов</span></h2>
+
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab7218d7cc417dcde6d8b6a899b8693201e302e1434cc5b6135460247285fa883&amp;width=100%&amp;height=400&amp;lang=ru_RU&amp;scroll=false"></script>
+    </section>
+
+    <section class="advise">
+        <div class="wrapper">
+            <h2 class="advise__title">Нужен совет?</h2>
+            <p class="advise__subtitle">Наш мастер ответит на все ваши вопросы</p>
+            <div class="advise__man">
+                <h3 class="advise__man-name">Евгений Мозжухин</h3>
+                <p class="advise__man-exp">профессиональный строитель с 2005</p>
+                <p class="advise__man-job">Мастер монтажник</p>
+                <a href="#" class="btn btn--alt btn-advise popup">Хочу пообщаться с ним лично</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="portfolio" id="portfolio">
+        <div class="wrapper">
+
+            <h2 class="section-title portfolio__title"><span>Выполненные</span> объекты</h2>
+
+            <div class="portfolio__list">
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Ворота окатные</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-1-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-1-1-full.jpg" alt="portfolio-1-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-1-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-1-2-full.jpg" alt="portfolio-1-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-1-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-1-3-full.jpg" alt="portfolio-1-3">
+                        </a>
+                   </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Забор и калитка  из штакетника</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-2-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-2-1-full.jpg" alt="portfolio-2-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-2-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-2-2-full.jpg" alt="portfolio-2-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-2-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-2-3-full.jpg" alt="portfolio-2-3">
+                        </a>
+                   </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Забор из профлиста</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-3-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-3-1-full.jpg" alt="portfolio-3-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-3-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-3-2-full.jpg" alt="portfolio-3-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-3-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-3-3-full.jpg" alt="portfolio-3-3">
+                        </a>
+                   </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Забор из сетки 3D</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-4-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-4-1-full.jpg" alt="portfolio-4-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-4-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-4-2-full.jpg" alt="portfolio-4-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-4-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-4-3-full.jpg" alt="portfolio-4-3">
+                        </a>
+                   </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Забор из сетки рабица</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-5-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-5-1-full.jpg" alt="portfolio-5-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-5-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-5-2-full.jpg" alt="portfolio-5-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-5-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-5-3-full.jpg" alt="portfolio-5-3">
+                        </a>
+                   </div>
+                </div>
+
+                <div class="portfolio__item">
+                    <div class="portfolio__header">
+                        <h3>Забор и ворота из профлиста</h3>
+                    </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-6-1-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-6-1-full.jpg" alt="portfolio-6-1">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-6-2-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-6-2-full.jpg" alt="portfolio-6-2">
+                        </a>
+                   </div>
+                   <div class="portfolio__image">
+                        <a href="img/portfolio-6-3-full.jpg" data-imagelightbox="c">
+                            <img class="b-lazy" src="img/portfolio-thumb.jpg" data-src="img/portfolio-6-3-full.jpg" alt="portfolio-6-3">
+                        </a>
+                   </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class="question">
+        <div class="wrapper">
+           
+            <div class="question__content">
+                <form class="form question__form" action="mail.php" method="POST">
+                    <div class="form__header">Остались <span>вопросы?</span></div>
+                    <div class="form__descr">Впишите свой вопрос и через <br> <span>15 минут</span> вам ответит наш специалист</div>
+                    <textarea class="form__area" name="question" cols="30" rows="5">Ваш вопрос</textarea>
+                    <input class="form__input" type="tel" name="number" placeholder="Введите свой телефон" required>
+                    <input type="hidden" name="loc" value="question">
+                    <button class="btn btn--alt form__btn" type="submit">Заказать расчет <br> <small>(это бесплатно)</small></button>
+                </form>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="wrapper">
+            
+            <div class="footer__content">
+                    <div class="footer__logo">
+                        <a href="/">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                <div class="footer__center">
+                    <div class="footer__arrow">
+                        <a class="footer__up" href="#">Наверх</a>
+                    </div>
+                </div>
+                <div class="footer__contacts">
+                    <a class="footer__contacts-tel" href="tel:+7(927)712-67-03">+7(927)712-67-03</a>
+                    <p class="footer__contacts-time"><span>Часы работы:</span> пн-пт с 8.00 до 19.00</p>
+                    <a class="btn popup" href="#">Позвоните нам бесплатно</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="popup__overlay">
+        <div class="popup__wrapper">
+            <form class="form popup__form" action="mail.php" method="POST">
+                <div class="popup__close">&times;</div>
+                <div class="form__header"><span>Свяжитесь</span> со мной</div>
+                <div class="form__descr">Оставьте свой телефон и в течении <br> <span>45 минут</span> наш специалист свяжется с вами</div>
+                <input class="form__input" type="tel" name="number" placeholder="Введите свой телефон" required>
+                <input type="hidden" name="loc" value="popup">
+                <button class="btn btn--alt form__btn" type="submit">Оставить заявку</button>
+                <div class="form__bottom">Заполнение заявки Вас ни к чему не обязывает! Вы сможете отказаться в любой момент!</div>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
