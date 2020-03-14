@@ -50,7 +50,7 @@ $(function(){
 	});
 
 	//on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
-	$('#nav-toggler').on('click', function(e){
+	$('.burger').on('click', function(e){
 		e.preventDefault();
 		$(this).toggleClass('burger--close');
 		$('.header__menu').toggleClass('header__menu--open');
