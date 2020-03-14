@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(function(){
 
 	//lazyload
 	var bLazy = new Blazy({
@@ -18,8 +18,9 @@ $(document).ready(function(){
 		$('body').css('overflow', 'initial');
 	});
 
-	//input-mask
-	$('input[type="tel"]').inputmask({"mask": "+9 (999) 999-9999"});
+	// https://github.com/digitalBush/jquery.maskedinput
+	$('input[type="tel"]').mask("+7(999) 999-9999");
+
 
 	//header-menu
     $('.header__menu a').on('click', function(e){
@@ -34,6 +35,25 @@ $(document).ready(function(){
 			scrollTop: h.offset().top - 190
 		}, 400);
 		
+	});
+
+	//animate header
+	var fixNav = 300;
+	$(window).scroll(function() {
+	var scroll = $(this).scrollTop();
+	if ( scroll >= fixNav ) {
+		$('.header').addClass('header--sticky');
+		}
+		else {
+			$('.header').removeClass('header--sticky');
+		}
+	});
+
+	//on mobile - open/close secondary navigation clicking/tapping the .cd-secondary-nav-trigger
+	$('#nav-toggler').on('click', function(e){
+		e.preventDefault();
+		$(this).toggleClass('burger--close');
+		$('.header__menu').toggleClass('header__menu--open');
 	});
 	
     //foto

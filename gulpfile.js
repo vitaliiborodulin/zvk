@@ -25,7 +25,8 @@ const isSync = process.argv.includes('--sync');
 const jsFiles = [
 	// './node_modules/jquery/dist/jquery.js',
 	'./node_modules/blazy/blazy.js',
-	'./node_modules/inputmask/dist/jquery.inputmask.min.js',
+	// './node_modules/inputmask/dist/jquery.inputmask.min.js',
+	'./node_modules/jquery.maskedinput/src/jquery.maskedinput.js',
 	'./node_modules/imagelightbox/dist/imagelightbox.min.js',
 	'./src/js/script.js'
 ]

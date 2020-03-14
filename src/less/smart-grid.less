@@ -2,18 +2,21 @@
 @atom: (100% / @columns);
 
 @break_md: 920px;
+@break_mmd: 780px;
 @break_sm: 620px;
 @break_xs: 480px;
 @break_xxs: 350px;
 
 @offset: 24px;
 @offset_md: @offset;
+@offset_mmd: @offset;
 @offset_sm: @offset;
 @offset_xs: @offset;
 @offset_xxs: @offset;
 
 @offset_one_side: (@offset / 2);
 @offset_md_one_side: (@offset_md / 2);
+@offset_mmd_one_side: (@offset_mmd / 2);
 @offset_sm_one_side: (@offset_sm / 2);
 @offset_xs_one_side: (@offset_xs / 2);
 @offset_xxs_one_side: (@offset_xxs / 2);
@@ -90,6 +93,11 @@
 .size-md(@n){
     @val: ~"calc(100% / @{columns} * @{n} - @{offset_md})";
     .md(width, @val);
+}
+
+.size-mmd(@n){
+    @val: ~"calc(100% / @{columns} * @{n} - @{offset_mmd})";
+    .mmd(width, @val);
 }
 
 .size-sm(@n){
@@ -169,6 +177,38 @@
 .shift-md-padding-right(@n){
     @val: ~"calc(100% / @{columns} * @{n} + @{offset_md_one_side})";
     .md(padding-right, @val);
+}
+
+.shift-mmd(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(margin-left, @val);
+    .mmd(margin-right, @val);
+}
+
+.shift-mmd-left(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(margin-left, @val);
+}
+
+.shift-mmd-right(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(margin-right, @val);
+}
+
+.shift-mmd-padding(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(padding-left, @val);
+    .mmd(padding-right, @val);
+}
+
+.shift-mmd-padding-left(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(padding-left, @val);
+}
+
+.shift-mmd-padding-right(@n){
+    @val: ~"calc(100% / @{columns} * @{n} + @{offset_mmd_one_side})";
+    .mmd(padding-right, @val);
 }
 
 .shift-sm(@n){
@@ -275,6 +315,18 @@
 
 .md-block(@content){
     @media screen and (max-width: @break_md){
+        @content();
+    }
+}
+
+.mmd(@name, @value){
+    @media screen and (max-width: @break_mmd){
+        @{name}: @value;
+    }
+}
+
+.mmd-block(@content){
+    @media screen and (max-width: @break_mmd){
         @content();
     }
 }
