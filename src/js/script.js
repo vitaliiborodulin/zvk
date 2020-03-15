@@ -5,7 +5,6 @@ $(function(){
 		// options
 	});
 	
-
 	//popup
 	$('.popup').on('click', function(e){
 		e.preventDefault();
