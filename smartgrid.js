@@ -3,12 +3,9 @@ module.exports = {
     offset: '24px',
     container: {
         maxWidth: '960px',
-        fields: '24px' // >= offset/2
+        fields: '24px' 
     },
     breakPoints: {
-        // lg: {
-        //     width: '1000px',
-        // },
         md: {
             width: '920px',
             fields: '15px' 

@@ -10,7 +10,6 @@ const gulpif = require('gulp-if');
 const smartgrid = require('smart-grid');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-// const babel = require('gulp-babel');
 const imagemin = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminPngquant = require('imagemin-pngquant');
@@ -58,9 +57,6 @@ function js() {
 	return gulp.src(jsFiles)
 	.pipe(gulpif(isDev, sourcemaps.init()))
 	.pipe(concat('script.js'))
-	// .pipe(babel({
-	// 	presets: ['@babel/env']
-	// }))
 	.pipe(gulpif(isProd, uglify({
 		toplevel: true
 	})))
@@ -107,10 +103,6 @@ function grid(done) {
 
 	let settings = require('./smartgrid.js');
 	smartgrid('./src/less', settings);
-	
-	// settings.offset = '3,1%'; //for 2 css files
-	// settings.filename = 'smart-grid-per';
-	// smartgrid('./src/less', settings);
 
 	done();
 }
