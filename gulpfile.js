@@ -87,7 +87,8 @@ function watch() {
 		browserSync.init({
 			server: {
 				baseDir: './build/'
-			}
+			},
+			open: false
 		})
 	}
 

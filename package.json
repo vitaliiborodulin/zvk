@@ -32,7 +32,6 @@
     "blazy": "^1.8.2",
     "imagelightbox": "^1.0.2",
     "jquery.maskedinput": "^1.4.1",
-    "remove": "^0.1.5",
     "slick-carousel": "^1.8.1"
   }
 }

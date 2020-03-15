@@ -57,8 +57,16 @@ $(function(){
 	});
 	
     //foto
-    $('a[data-imagelightbox="c"]')
-        .imageLightbox({button: true, overlay: true, activity: true, quitOnDocClick: true, quitOnImgClick: true});
+    $('a[data-imagelightbox="c"]').imageLightbox({button: true, overlay: true, quitOnDocClick: true, quitOnImgClick: true});
+
+	//works-section
+	$('a[data-imagelightbox="w1"]').imageLightbox({button: true, overlay: true,  quitOnDocClick: true, navigation: true, arrows: true});
+	$('a[data-imagelightbox="w2"]').imageLightbox({button: true, overlay: true,  quitOnDocClick: true, navigation: true, arrows: true});
+	$('a[data-imagelightbox="w3"]').imageLightbox({button: true, overlay: true,  quitOnDocClick: true, navigation: true, arrows: true});
+	$('a[data-imagelightbox="w4"]').imageLightbox({button: true, overlay: true,  quitOnDocClick: true, navigation: true, arrows: true});
+	$('a[data-imagelightbox="w5"]').imageLightbox({button: true, overlay: true,  quitOnDocClick: true, navigation: true, arrows: true});
+
+
 
 	//footer-arrow-up
 	$('.footer_up').on('click', function(){
