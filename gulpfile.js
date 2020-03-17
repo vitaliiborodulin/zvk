@@ -9,7 +9,7 @@ const browserSync = require('browser-sync').create();
 const gulpif = require('gulp-if');
 const smartgrid = require('smart-grid');
 const concat = require('gulp-concat');
-const uglify = require('gulp-uglify');
+const uglify = require('gulp-uglify-es').default;
 const imagemin = require('gulp-imagemin');
 const imageminJpegRecompress = require('imagemin-jpeg-recompress');
 const imageminPngquant = require('imagemin-pngquant');
@@ -58,7 +58,7 @@ function js() {
 	.pipe(gulpif(isDev, sourcemaps.init()))
 	.pipe(concat('script.js'))
 	.pipe(gulpif(isProd, uglify({
-		toplevel: true
+		// toplevel: true
 	})))
 	.pipe(gulpif(isDev, sourcemaps.write()))
 	.pipe(gulp.dest('./build/js'))
