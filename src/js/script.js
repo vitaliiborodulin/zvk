@@ -18,23 +18,23 @@ $(function(){
 	});
 
 	// https://github.com/digitalBush/jquery.maskedinput
-	$('input[type="tel"]').mask("+7(999) 999-9999");
+	$('input[type="tel"]').mask("+7 (999) 999-9999");
 
 
 	//header-menu
     $('.header__menu a').on('click', function(e){
 		e.preventDefault();
 
-		// $('.header__menu a').removeClass('active').filter(this).addClass('active');
+	 	$('.header__menu a').removeClass('active').filter(this).addClass('active');
 
 		var selector = $(this).attr('href');
 		var h = $(selector);
 
 		$('html, body').animate({
-			scrollTop: h.offset().top - 190
+			scrollTop: h.offset().top - 40
 		}, 400);
 		
-	});
+	}); 
 
 	//animate header
 	var fixNav = 300;
