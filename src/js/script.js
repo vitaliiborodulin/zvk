@@ -1,3 +1,5 @@
+// "use strict";
+
 $(function(){
 
 	//lazyload
@@ -94,5 +96,9 @@ $(function(){
 			scrollTop: 0
 		}, 400);
 	});
+
+	//body arrow up - see btn.less for customizing
+	$('<div>').addClass('arrowUpBtn').appendTo('body');
+
 
 });

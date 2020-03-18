@@ -34,3 +34,23 @@
     background-color: @white_btn;
     border: 1px solid @brown;
 }
+
+.arrowUpBtn {
+    display: none;
+    position: fixed;
+    right: 20px;
+    bottom: 30px;
+    width: 32px;
+    height: 32px;
+    background: @brown;
+    border-radius: 50%;
+    box-shadow: 0 0 5px @white_pure;
+    opacity: 0.5;
+    cursor: pointer;
+    z-index: 100;
+    transition: opacity 0.2s;
+
+    &:hover {
+        opacity: 1;
+    }
+}
